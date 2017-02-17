@@ -1,0 +1,19 @@
+Variable Name:
+Cloudy Sprinkler Rain WetGrass
+
+Adjacendy Matrix:
+0 1 1 0
+0 0 0 1	
+0 0 0 1
+0 0 0 0
+
+CPT:
+Cloudy={True:0.5, False:0.5}
+Cloudy=True | Sprinkler={True:0.1, False:0.9}
+Cloudy=False | Sprinkler={True:0.5, False:0.5}
+Cloudy=True | Rain={True:0.8, False:0.2}
+Cloudy=False | Rain={True:0.2, False:0.8}
+Sprinkler=True, Rain=True | WetGrass={True:0.99, False:0.01}
+Sprinkler=True, Rain=False | WetGrass={True:0.9, False:0.1}
+Sprinkler=False, Rain=True | WetGrass={True:0.9, False:0.1}
+Sprinkler=False, Rain=False | WetGrass={True:0, False:1}
